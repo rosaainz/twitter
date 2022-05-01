@@ -6,5 +6,16 @@ class User{
          this.bio = bio
          this.dateCreated = new Date()
          this.lastUpdated = new Date()
- 
      }
+
+    //setters
+    set setUsername(newUsername){
+        this.username = newUsername
+    }
+
+    set setBio(newBio){
+        this.bio = newBio
+    }
+}
+
+module.exports = User
