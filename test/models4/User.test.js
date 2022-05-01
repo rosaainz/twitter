@@ -14,4 +14,14 @@ const User = require('./../../app/models4/User')
     expect(user.lastUpdated).not.toBeUndefined()  
     });
 
+    //Requerimiento 4 USO DE SETTERS
+    test('Add setters', () => {
+        const user = new User(1, "carlogilmar", "Carlo", "Bio")
+        user.setUsername = "Gilmar"
+        expect(user.username).toBe("Gilmar")
+
+        user.setBio = "New Bio"
+        expect(user.bio).toBe("New bio")
+    })
+    
 
