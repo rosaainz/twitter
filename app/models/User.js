@@ -33,6 +33,7 @@ class User{
     set setBio(newBio){
         this.bio = newBio
     }
-}
 
+}
+const user = new User(1, "carlogilmar", "Carlo")
 module.exports = User

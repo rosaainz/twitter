@@ -28,6 +28,7 @@ const User = require('./../../app/models/User')
         user.setUsername = "Gilmar"
         expect(user.username).toBe("Gilmar")
 
+
         user.setBio = "New bio"
         expect(user.bio).toBe("New bio")
     });
