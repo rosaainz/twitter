@@ -14,6 +14,12 @@ class UserService{
     static updateUsername (objectUser, newUsername) { //recibe objeto de la clase User.js y un string
         this.username = newUsername   //el string actualiza el valor de username
       }
+
+      static getAllUsernames(users){  //recibe lista de objetos de la clase User
+        const newListUsernames = users.map(user => user.username) //regresa una lista de los usernames de los objetos
+        return newListUsernames        
+    }
+    
 }
 
 module.exports = UserService
