@@ -7,7 +7,8 @@ class UserService{
         return new User(id, username, name, "Sin bio")
     }
 
-
-
+    static getInfo(user){   //recibe objeto de User.js
+        return    //regresa una lista de los atributos del objeto
+    }
 
 module.exports = UserService
