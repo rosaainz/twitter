@@ -10,6 +10,10 @@ class UserService{
     static getInfo(user){   //recibe objeto de User.js
         return Object.values(user)   //regresa una lista de los atributos del objeto
     }
+
+    static updateUsername (objectUser, newUsername) { //recibe objeto de la clase User.js y un string
+        this.username = newUsername   //el string actualiza el valor de username
+      }
 }
 
 module.exports = UserService
